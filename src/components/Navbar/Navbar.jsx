@@ -1,19 +1,17 @@
 import React from 'react';
-import './Navbar.css'; // Assuming you have CSS specific to the Navbar
+import { Link } from 'react-router-dom';
+import './Navbar.css'; // Make sure to create a corresponding CSS file
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="navbar-logo">
-        {/* If you're keeping logo.svg for now */}
-        <img src="/path/to/logo.svg" alt="Logo" />
+      <Link to="/" className="navbar-logo">
+        TU Gaming {/* You can replace this with your logo */}
+      </Link>
+      <div className="navbar-links">
+        <Link to="/">Home</Link>
+        {/* Add more navigation links as needed */}
       </div>
-      {/* Add your navigation items */}
-      <ul className="navbar-nav">
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
     </nav>
   );
 };

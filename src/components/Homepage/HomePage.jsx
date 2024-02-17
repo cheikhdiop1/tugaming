@@ -1,11 +1,11 @@
 import React from 'react';
-import './HomePage.css';
+import './HomePage.css'; // Make sure to create a corresponding CSS file
 
 const HomePage = () => {
   return (
-    <div className="homepage">
+    <div className="homePage">
       <h1>Welcome to TU Gaming</h1>
-      {/* Content for the HomePage */}
+      {/* Insert more content or components specific to the HomePage */}
     </div>
   );
 };
